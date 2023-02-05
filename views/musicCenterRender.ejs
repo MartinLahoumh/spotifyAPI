@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "/stylesheets/musicCenter.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="/callback" method="POST">
+        <div class = "app-container"> <!-- The entire app-->
+            <div class = "app-window"> <!--Border for the app-->
+                <div class = "app-header">
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                    <p class = "app-title">Music Center</p>
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                </div>
+                <div class = "window"> <!--Border for content-->
+                    <div class="content">
+                        <!--COLORS-->
+                        <div class = "left-side">
+                            <img class = "red-square" src = "/images/redPaper.jpg">
+                            <div class = "description-text">
+                                <label for = "description" class = "description-title">Description: </label>
+                                <textarea type = "text" autocomplete="off" class = "disc"
+                                name = "disc" placeholder = "About..."></textarea>
+                            </div>
+                        </div>
+                        <div class = "right-side">
+                            <div class = "top-right">
+                                <img class = "yellow-square" src ="/images/yellowPaper.jpg">
+                                <div class = "public-container">
+                                    <label for = "public" class = "public-title">Public: </label>
+                                    <input type = "checkbox" autocomplete="off" class = "check-box" name = "checkbox"/>
+                                </div>
+                            </div>
+                            <div class = "middle-right">
+                                <button class = "blue-square"></button>
+                                <label for = "blue-square" class = "create-title">Create</label>
+                            </div>
+                            <div class = "bottom-right">
+                                <img class = "green-square" src = "/images/greenPaper.jpg">
+                                <div class = "name-container">
+                                    <label for = "name" class = "name-title">Name: </label>
+                                    <input type = "text" autocomplete="off" class = "name-box"
+                                    name = "name" placeholder = "Name of Playlist..."/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
